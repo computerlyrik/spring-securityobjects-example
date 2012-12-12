@@ -1,9 +1,9 @@
 # Description
 Example project for spring-securityobjects library.
 
-Demonstates forwarding on User Role,
-demonstrates jsf login forms and
-features 1:n relationships (yeah!)
+- Demonstates forwarding on User Role,
+- demonstrates jsf login forms and
+- features 1:n relationships (yeah!)
 
 # Usage
 /path/to/maven3 jetty:run
