@@ -1,0 +1,16 @@
+// Spring Roo 1.2.2.RELEASE [rev 7d75659] log opened at 2012-10-30 22:04:33
+project --topLevelPackage de.computerlyrik.spring.securityobjects.example --projectName SecurityobjectsExample
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY 
+hint
+entity jpa --class ~.domain.Category --testAutomatically
+entity jpa --class ~.domain.Item --testAutomatically 
+field string --fieldName content --class ~.domain.Category
+field string --fieldName content --class ~.domain.Item
+field set --fieldName items --class ~.domain.Category --type ~.domain.Item --mappedBy category
+field reference --fieldName category --class ~.domain.Item --type ~.domain.Category --notNull
+
+// security setup
+
+web jsf setup 
+web jsf all --package ~.web
+
