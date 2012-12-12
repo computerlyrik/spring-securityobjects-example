@@ -1,3 +1,14 @@
+# Description
+Example project for spring-securityobjects library.
+
+Demonstates forwarding on User Role,
+demonstrates jsf login forms and
+features 1:n relationships (yeah!)
+
+# Usage
+/path/to/maven3 jetty:run
+
+# Configuration
 Configure landing pages set up a map-like structure in applicationContext.
 Pass configuration to Handler bean
 
@@ -19,3 +30,4 @@ Pass configuration to Handler bean
     </beans:bean>
 
 ```
+
